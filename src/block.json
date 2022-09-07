@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/gutenberg-demo",
+	"version": "0.1.0",
+	"title": "Gutenberg Demo",
+	"category": "widgets",
+	"icon": "admin-generic",
+	"description": "A box of text",
+	"keywords":["text","paragraph","box"],
+	"supports": {
+		"html": false
+	},
+	"styles": [
+		{
+			"name" : "squared",
+			"label": "Squared",
+			"isDefault": true
+		},
+		{
+			"name" : "rounded",
+			"label": "Rounded"
+		}
+	],
+	"example": {
+		"attributes": {
+			"text" : "This is some text!",
+			"gradient" : "red-to-blue",
+			"shadow": true
+		}
+	},
+	"textdomain": "gutenberg-demo",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
